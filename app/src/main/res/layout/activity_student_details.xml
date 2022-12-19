@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#caf0f8"
+
+    tools:context=".StudentDetails">
+
+    <ImageView
+        android:id="@+id/student_details_img"
+        android:layout_width="375dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/student_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FEB64D"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/student_details__id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_details_img" />
+
+    <TextView
+        android:id="@+id/student_details_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FEB64D"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/student_details_cb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_details_phone" />
+
+    <CheckBox
+        android:id="@+id/student_details_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="Checked"
+        android:textColor="#FEB64D"
+
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_details_address" />
+
+    <TextView
+        android:id="@+id/student_details_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FEB64D"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/student_details_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_details__id" />
+
+    <TextView
+        android:id="@+id/student_details__id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#FEB64D"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/student_details_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_details_name" />
+
+    <Button
+        android:id="@+id/student_details_editbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FEB64D"
+        android:textColor="@android:color/white"
+
+        android:onClick="editBtn"
+        android:text="EDIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toEndOf="@+id/student_details_cb"
+        app:layout_constraintTop_toBottomOf="@+id/student_details_cb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
